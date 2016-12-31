@@ -4,12 +4,15 @@ from setuptools import find_packages, setup
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
 
+with open(os.path.join(os.path.dirname(__file__), 'VERSION')) as version_file:
+    VERSION = version_file.read().strip()
+
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='joda-articles',
-    version='0.1.0',
+    version=VERSION,
     packages=find_packages(),
     include_package_data=True,
     license='AGPL 3.0 License',

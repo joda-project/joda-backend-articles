@@ -8,7 +8,7 @@ Quick start
 
     INSTALLED_APPS = [
         ...
-        'joda-articles',
+        'joda_articles',
     ]
 
     JODA_FEATURES = [
