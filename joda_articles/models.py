@@ -10,6 +10,9 @@ class Journal(models.Model):
     def __str__(self):
         return self.title
 
+    class JSONAPIMeta:
+        resource_name = "journals"
+
 
 class Article(Content):
     authors = models.ManyToManyField(Author, blank=True)
@@ -23,3 +26,6 @@ class Article(Content):
     doi = models.CharField(max_length=255, blank=True)
     arxiv = models.CharField(max_length=255, blank=True)
     cds = models.CharField(max_length=255, blank=True)
+
+    class JSONAPIMeta:
+        resource_name = "articles"
