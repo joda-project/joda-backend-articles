@@ -1,6 +1,7 @@
 from django.db import models
 
-from joda_core.models import Author, Content
+from joda_core.models import Author
+from joda_core.documents.models import Document
 
 
 class Journal(models.Model):
@@ -11,10 +12,10 @@ class Journal(models.Model):
         return self.title
 
     class JSONAPIMeta:
-        resource_name = "journals"
+        resource_name = 'journals'
 
 
-class Article(Content):
+class Article(Document):
     authors = models.ManyToManyField(Author, blank=True)
 
     journal = models.ForeignKey(Journal, blank=True, null=True)
@@ -28,4 +29,4 @@ class Article(Content):
     cds = models.CharField(max_length=255, blank=True)
 
     class JSONAPIMeta:
-        resource_name = "articles"
+        resource_name = 'articles'

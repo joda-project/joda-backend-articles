@@ -1,0 +1,7 @@
+[run]
+branch = True
+source =
+  joda_articles
+omit =
+  joda_articles/migrations/*
+  joda_articles/tests/*

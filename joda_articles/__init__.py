@@ -1,16 +1,11 @@
 import os
-from joda.version import get_version
+
+VERSION = (0, 1, 0, 'alpha', 1)
 
 default_app_config = 'joda_articles.apps.ArticlesConfig'
+module_path = os.path.dirname(os.path.abspath(__file__))
 
-version = get_version(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__))))
-
+model_name = 'Article'
 item_name = 'article'
 item_group = 'articles'
-
-print((
-    'Joda Articles version %(version)s'
-) % {
-    'version': version
-})
+new_item_str = 'New Article'

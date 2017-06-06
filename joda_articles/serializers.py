@@ -1,12 +1,12 @@
 from rest_framework_json_api import serializers
 
-from joda_core.serializers import ContentSerializer
+from joda_core.documents.serializers import DocumentSerializer
 from joda_articles.models import Article, Journal
 
 
-class ArticleSerializer(ContentSerializer):
+class ArticleSerializer(DocumentSerializer):
 
-    class Meta(ContentSerializer.Meta):
+    class Meta(DocumentSerializer.Meta):
         model = Article
 
 
