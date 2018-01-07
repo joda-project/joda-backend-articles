@@ -1,4 +1,5 @@
 import os
+from django.utils.translation import ugettext_lazy as _
 
 VERSION = (0, 1, 0, 'alpha', 1)
 
@@ -8,4 +9,4 @@ module_path = os.path.dirname(os.path.abspath(__file__))
 model_name = 'Article'
 item_name = 'article'
 item_group = 'articles'
-new_item_str = 'New Article'
+new_item_str = _('New Article')

@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-09 19:25+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+
+#: __init__.py:12
+msgid "New Article"
+msgstr "Nov članek"
+
+#: apps.py:7
+msgid "Articles"
+msgstr "Članki"
+
+#: models.py:10
+msgid "title"
+msgstr "naslov"
+
+#: models.py:12
+msgid "abbreviation"
+msgstr "okrajšava"
+
+#: models.py:18 models.py:30
+msgid "journal"
+msgstr "revija"
+
+#: models.py:19
+msgid "journals"
+msgstr "revije"
+
+#: models.py:27
+msgid "authors"
+msgstr "avtorji"
+
+#: models.py:32
+msgid "pages"
+msgstr "strani"
+
+#: models.py:34
+msgid "volume"
+msgstr "letnik"
+
+#: models.py:36
+msgid "issue"
+msgstr "številka"
+
+#: models.py:38
+msgid "year"
+msgstr "leto"
+
+#: models.py:41
+msgid "DOI"
+msgstr "DOI"
+
+#: models.py:43
+msgid "arXiv"
+msgstr "arXiv"
+
+#: models.py:45
+msgid "CDS"
+msgstr "CDS"
+
+#: models.py:48
+msgid "article"
+msgstr "članek"
+
+#: models.py:49
+msgid "articles"
+msgstr "članki"
