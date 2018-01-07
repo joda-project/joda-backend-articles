@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('joda_core', '0004_i18n'),
+        ('joda_core', '0001_initial'),
     ]
 
     operations = [
