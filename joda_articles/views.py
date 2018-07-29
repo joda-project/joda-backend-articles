@@ -8,7 +8,7 @@ from joda_articles.serializers import ArticleSerializer, JournalSerializer
 
 
 class ArticlesFilterSet(FilterSet):
-    authors = NumberInFilter(name='authors', distinct=True)
+    authors = NumberInFilter(field_name='authors', distinct=True)
 
     class Meta:
         model = Article
